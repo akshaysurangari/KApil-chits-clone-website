@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>Mobile Login</title>
+<style>
+*
+{
+font-family:sans-serif;
+}
+.a
+{
+background-color:skyblue;
+height:40px;
+}
+.b
+{
+margin-top:10px;
+margin-bottom:15px;
+margin-left:800px;
+background-color:Lightskyblue;
+border:2px solid #008CBA;
+}
+.c
+{
+margin-top:10px;
+margin-bottom:15px;
+background-color:Lightskyblue;
+border:2px solid #008CBA;
+}
+.d
+{
+margin-top:10px;
+margin-bottom:15px;
+background-color:Lightskyblue;
+border:2px solid #008CBA;
+}
+.e
+{
+padding-top:0px;
+padding-left:120px;
+padding-bottom:5px;
+}
+.f
+{
+display:flex;
+list-style-type:none;
+font-size:13px;
+}
+.g
+{
+padding-left:300px;
+padding-top:20px;
+font-family:Arial;
+}
+.h
+{
+padding-left:30px;
+padding-top:20px;
+}
+.An
+{
+text-decoration:none;
+color:rgb(0,0,120);
+}
+.form
+{
+margin-top:80px;
+border:1px solid grey;
+margin-left:420px;
+margin-right:420px;
+background-color:white;
+border-radius:20px;
+}
+.i
+{
+margin-top:30px;
+border:1px solid grey;
+margin-left:30px;
+margin-right:280px;
+background-color:white;
+padding-top:10px;
+padding-bottom:10px;
+position:relative;
+color:black;
+}
+.j
+{
+margin-top:-40px;
+border:1px solid grey;
+margin-left:280px;
+margin-right:30px;
+background-color:white;
+padding-top:10px;
+padding-bottom:10px;
+position:relative;
+color:black;
+}
+.k
+{
+margin-top:50px;
+margin-left:10px;
+display: block;
+width:95%;
+height: 40px;
+padding-top: 6px;
+padding-right: 12px;
+padding-bottom: 6px;
+padding-left:12px;
+font-size: 14px;
+color: #555555;
+}
+.n
+{
+margin-top:50px;
+font-size:15px;
+color:white;
+background-color:#3e4095;
+border:0;
+border-radius:3%;
+width:500px;
+height:40px;
+margin-left:10px;
+}
+.l
+{
+list-style-type:none;
+display:flex;
+font-size:13px;
+padding-left:100px;
+}
+.m
+{
+font-size:12px;
+color:#3e4095;
+}
+</style>
+<script>
+function valids(x)
+{
+var mob=x.mob.value;
+var pass=x.pass.value;
+var m=/^[0-9]{10}$/;
+var p=/^[A-Za-z0-9]{8,}$/;
+if(!(m.test(mob)))
+{
+alert("Enter mobile number with 10 digits");
+x.mob.focus();
+return false;
+}
+if(!(p.test(pass)))
+{
+alert("Password should be minimum 8 characters");
+x.pass.focus();
+return false;
+}
+return true;
+}
+
+</script>
+
+
+</head>
+<body>
+<header>
+<div class="a">
+<form >
+<button class="b"><a href="https://play.google.com/store/apps/details?id=kapil.chits&hl=en&pli=1" style="text-decoration:none">Download App</a></button>
+<button class="c"><a href=loginkapil.html style="text-decoration:none">Online Auction</button></a>
+<button class="d"><a href=loginkapil.html style="text-decoration:none">Subscription Pay Online</button></a>
+</form>
+</div>
+<div>
+<ul class="f" >
+<li><img class="e" src="logo.png"></li>
+<li class="g"><A class="An" style="color:#CD5C5C"href="kapil chits clone website.html">HOME</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">HOW DOES A CHIT WORK</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">WHY KAPIL CHITS</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">FAQ</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">CHIT PLANS</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">INTERESTED TO JOIN</A></li>
+</ul>
+</div>
+</header>
+<div style="background:#E8EFF6"> 
+<br/>
+<br/>
+<form class="form" onsubmit="return valids(this)" action="submit.html" method="post">
+<br/>
+<center style="font-size:30px">Existing Subscriber Sign In</center>
+<A href="loginkapil.html" style="text-decoration:none"><div class=i><input type="radio" name="e1" value=email >Email</div></A>
+<A href="moblogin.html" style="text-decoration:none"><div class=j><input type="radio" name="e1" value=phone checked>Mobile Number</div></A>
+<input class="k" type="text" size="20" placeholder="Mobile Number" name="mob">
+<input class="k" type="Password" size="20" placeholder="Password" name="pass">
+<button class="n">Submit</button>
+<ul style="list-style-type:none;display:flex;">
+<li><A href=signup.html>Subscriber Sign Up</A></li>
+</ul>
+</form>
+<br/>
+<br/>
+<br/>
+</div>
+<ul class="l" >
+<li>Kapil Chits ©</li>
+<li class="m" style="padding-left:700px"><a href=a.html style="text-decoration:none">Media</a></li>
+<li class="m"style="padding-left:100px"><a href=a.html style="text-decoration:none">Privacy Policy</a></li>
+<li class="m"style="padding-left:100px"><a href=a.html style="text-decoration:none">Terms and Conditions</li>
+</ul>
+</body>
+</html>

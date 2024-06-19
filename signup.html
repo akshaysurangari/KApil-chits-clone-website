@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>signup</title>
+<style>
+.a
+{
+background-color:skyblue;
+height:40px;
+}
+.b
+{
+margin-top:10px;
+margin-bottom:15px;
+margin-left:800px;
+background-color:Lightskyblue;
+border:2px solid #008CBA;
+}
+.c
+{
+margin-top:10px;
+margin-bottom:15px;
+background-color:Lightskyblue;
+border:2px solid #008CBA;
+}
+.d
+{
+margin-top:10px;
+margin-bottom:15px;
+background-color:Lightskyblue;
+border:2px solid #008CBA;
+}
+.e
+{
+padding-top:0px;
+padding-left:120px;
+padding-bottom:5px;
+}
+.f
+{
+display:flex;
+list-style-type:none;
+font-size:13px;
+}
+.g
+{
+padding-left:300px;
+padding-top:20px;
+font-family:Arial;
+}
+.h
+{
+padding-left:30px;
+padding-top:20px;
+}
+.An
+{
+text-decoration:none;
+color:rgb(0,0,120);
+}
+
+.i
+{
+margin-top:500px;
+position:position;
+}
+.j
+{
+position:relative;
+margin:top:100px;
+}
+.k
+{
+margin-top:5px;
+margin-left:0px;
+display: block;
+width:30%;
+height: 50px;
+padding-top: 6px;
+padding-right: 12px;
+padding-bottom: 6px;
+padding-left:12px;
+font-size: 14px;
+color: #555555;
+}
+.l
+{
+margin-left:100px;
+}
+.m
+{
+margin-top:50px;
+background-color:#FFA500;
+width:100px;
+height:30px;
+border-radius:10px;
+}
+.n
+{
+list-style-type:none;
+display:flex;
+font-size:13px;
+padding-left:100px;
+}
+.o
+{
+font-size:12px;
+color:#3e4095;
+}
+</style>
+<script>
+function validate(x)
+{
+mail=x.mail.value;
+mail1=x.mail1.value;
+pass=x.pass.value;
+pass1=x.pass1.value;
+sur=x.sur.value;
+name=x.name.value;
+fname=x.fname.value;
+dob=x.dob.value;
+add=x.address.value;
+mob=x.mob.value;
+m=/^[A-Za-z0-9]{1,}\@gmail.com$/;
+p=/^[A-Za-z0-9]{8,}$/;
+s=/^[A-Za-z]{1,}$/;
+d=/^([0-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/;         
+mb=/^[0-9]{10}$/;
+if(!(m.test(mail)))
+{
+alert("Enter valid email");
+x.mail.focus();
+return false;
+}
+if(!(m.test(mail1)))
+{
+alert("Enter valid email in Re Enter Login Email Id box");
+x.mail1.focus();
+return false;
+}
+if(mail!=mail1)
+{
+alert("Both mail ids should be same");
+x.mail1.focus();
+return false;
+}
+if(!(p.test(pass)))
+{
+alert("password must be 8 characters");
+x.pass.focus();
+return false;
+}
+if(!(p.test(pass1)))
+{
+alert("password must be 8 characters");
+x.pass1.focus();
+return false;
+}
+if(pass!=pass1)
+{
+alert("Both passwords should be same");
+x.pass1.focus();
+return false;
+}
+if(!(s.test(sur)))
+{
+alert("Enter Sur Name");
+x.sur.focus();
+return false;
+}
+if(!(s.test(name)))
+{
+alert("Enter  Name");
+x.name.focus();
+return false;
+}
+if(!(s.test(fname)))
+{
+alert("Enter Father/Husband name");
+x.fname.focus();
+return false;
+}
+if(!(d.test(dob)))
+{
+alert("Enter valid Date of Birth");
+x.dob.focus();
+return false;
+}
+if(add.trim() === "") 
+{
+alert("Enter  address");
+x.address.focus();
+return false;
+}
+if(!(mb.test(mob)))
+{
+alert("Enter valid mobile number");
+x.mob.focus();
+return false;
+}
+return true;
+}
+
+</script>
+</head>
+<body>
+<header>
+<div class="a">
+<form >
+<button class="b"><a href="https://play.google.com/store/apps/details?id=kapil.chits&hl=en&pli=1" style="text-decoration:none">Download App</a></button>
+<button class="c"><a href=loginkapil.html style="text-decoration:none">Online Auction</button></a>
+<button class="d"><a href=loginkapil.html style="text-decoration:none">Subscription Pay Online</button></a>
+</form>
+</div>
+<div>
+<ul class="f" >
+<li><img class="e" src="logo.png"></li>
+<li class="g"><A class="An" style="color:#CD5C5C"href="kapil chits clone website.html">HOME</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">HOW DOES A CHIT WORK</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">WHY KAPIL CHITS</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">FAQ</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">CHIT PLANS</A></li>
+<li class="h"><A class="An" href="kapil chits clone website.html">INTERESTED TO JOIN</A></li>
+</ul>
+</div>
+</header>
+<div>
+<img  class=j src="signupimg1.png" width=1380 height=150 />
+<span class=i >Please enter following information which is given at your branch</span>
+<hr/>
+<form class=l onsubmit="return validate(this)" action="signsubmit.html" method="post">
+*indicates mandatory fields<br/>
+Login Email Id : * (e.g.:xyz@gmail.com)<br/>
+<input class="k" type="text" size="20"  name="mail">
+<span style="font-size:13px">Note : For Activation Enter valid Email Id.</span>
+<div style="margin-top:50px">Re Enter Login Email Id : *</div>
+<input class="k" type="text" size="20"  name="mail1">
+<div style="margin-top:50px">Password : *</div>
+<input class="k" type="text" size="20"  name="pass">
+<div style="margin-top:50px">Confirm Password : *</div>
+<input class="k" type="text" size="20"  name="pass1">
+<div style="margin-top:50px">Sur Name : *</div>
+<input class="k" type="text" size="20"  name="sur">
+<div style="margin-top:50px">Name : *</div>
+<input class="k" type="text" size="20"  name="name">
+<div style="margin-top:50px">Father/Husband Name : *</div>
+<input class="k" type="text" size="20"  name="fname">
+<div style="margin-top:50px">Date of Birth : *</div>
+<input class="k" type="text" size="20"  name="dob">
+<span style="font-size:13px">format:DD/MM/YYYY</span>
+<div style="margin-top:50px">Address : *</div>
+<textarea rows=5 cols=40 name="address"></textarea>
+<div style="margin-top:50px">Mobile Number : *</div>
+<input class="k" type="text" size="20"  name="mob">
+<input class=m type=submit>
+<br/>
+<br/><br/><br/><br/><br/>
+</form>
+</div>
+<ul class="n" >
+<li>Kapil Chits ©</li>
+<li class="o" style="padding-left:700px"><a href=a.html style="text-decoration:none">Media</a></li>
+<li class="o"style="padding-left:100px"><a href=a.html style="text-decoration:none">Privacy Policy</a></li>
+<li class="o"style="padding-left:100px"><a href=a.html style="text-decoration:none">Terms and Conditions</li>
+</ul>
+</body>
